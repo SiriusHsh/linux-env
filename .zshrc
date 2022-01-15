@@ -2,19 +2,19 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/sirius/.oh-my-zsh"
+export ZSH="/home/sirius/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" "powerlevel10k/powerlevel10k")
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -68,7 +68,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump  colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(autojump colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,20 +103,12 @@ source $ZSH/oh-my-zsh.sh
     ##source ~/.bashrc;
 #fi
 
-# added by Anaconda3 4.4.0 installer
-export PATH="/Users/sirius/anaconda/bin:$PATH"
-# added 
-export PATH=$PATH:/Users/sirius/Library/Tomcat9/bin
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 export MYZSHRC="$HOME/.zshrc"
 export MYVIMRC="$HOME/.config/nvim/init.vim"
 alias vim=nvim
 alias VIM=NVIM
 bindkey ',' autosuggest-accept
 alias s=neofetch
-#export PATH="/usr/local/opt/icu4c/bin:$PATH"
-#export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-

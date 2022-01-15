@@ -4,14 +4,12 @@
     "suggest.enablePreselect": false,
     "suggest.enablePreview": true,
     "suggest.triggerAfterInsertEnter": true,
-    "suggest.timeout": 5000,
     "suggest.detailMaxLength": 60,
     "suggest.autoTrigger": "always",
     "suggest.floatEnable": true,
     "suggest.detailField": "preview",
     "suggest.snippetIndicator": "~",
     "suggest.minTriggerInputLength": 2,
-    "suggest.triggerCompletionWait": 100,
 	"suggest.completionItemKindLabels": {
 		"class": "\uf0e8",
 		"color": "\ue22b",
@@ -40,7 +38,8 @@
 		"variable": "\ue71b"
 	},
     "yank.list.maxsize": 50,
-    "python.pythonPath": "/Users/sirius/anaconda/bin/python"
+    "python.pythonPath": "/home/sirius/miniconda3/bin/python",
+    "pyright.disableDiagnostics": true
 }
 
 

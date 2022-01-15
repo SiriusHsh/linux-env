@@ -70,13 +70,14 @@ Plug 'junegunn/vim-github-dashboard'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'connorholyday/vim-snazzy'
 Plug 'ajmwagar/vim-deus'
+Plug 'jacoborus/tender.vim'
 Plug 'preservim/tagbar'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'mg979/vim-xtabline'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'edkolev/tmuxline.vim'
+"Plug 'edkolev/tmuxline.vim'
 Plug 'gcmt/wildfire.vim'
 Plug 'mbbill/undotree'
 Plug 'preservim/nerdcommenter'
@@ -86,25 +87,44 @@ Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 Plug 'machakann/vim-highlightedyank'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'morhetz/gruvbox'
+Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 "  =====================  Start of Plugin Settings  =====================  "
-let g:syntastic_python_python_exec = '$HOME/anaconda/bin/python'
-let g:python3_host_prog=$HOME."/anaconda/bin/python"
+let g:syntastic_python_python_exec = '$HOME/miniconda3/bin/python'
+"let g:python3_host_prog= '$HOME/miniconda3/bin/python'
 "  =====================  Design  =====================  "
+set termguicolors
+
+set pumblend=30
+set winblend=10
+
 let g:airline_theme='deus'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 "let g:SnazzyTransparent = 1
 "colorscheme snazzy
-set termguicolors
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-colorscheme deus
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"colorscheme deus
+
+colorscheme gruvbox
+set background=dark
+
+"set termguicolors     " enable true colors support
+"let ayucolor="light"  " for light version of theme
+"let ayucolor="mirage" " for mirage version of theme
+"let ayucolor="dark"   " for dark version of theme
+"colorscheme ayu
+"highlight Normal guibg=NONE ctermbg=None
+highlight Normal guibg=None ctermbg=None
+highlight NonText guibg=None ctermbg=None
+
 "  =====================  COC  =====================  "
 let g:coc_global_extensions=[
             \'coc-json',
             \'coc-vimlsp',
-            \'coc-python',
+            \'coc-pyright',
             \'coc-tsserver',
             \'coc-clangd', 
             \'coc-snippets',

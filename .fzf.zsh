@@ -1,16 +1,16 @@
 # Setup fzf
 # ---------
-if [[ ! "$PATH" == */Users/sirius/.vim/plugged/fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}/Users/sirius/.vim/plugged/fzf/bin"
+if [[ ! "$PATH" == */home/sirius/.fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}/home/sirius/.fzf/bin"
 fi
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "/Users/sirius/.vim/plugged/fzf/shell/completion.zsh" 2> /dev/null
+[[ $- == *i* ]] && source "/home/sirius/.fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
 # ------------
-source "/Users/sirius/.vim/plugged/fzf/shell/key-bindings.zsh"
+source "/home/sirius/.fzf/shell/key-bindings.zsh"
 
 export FZF_DEFAULT_OPTS="
     --height 50% --layout reverse --info inline --border \
@@ -18,8 +18,8 @@ export FZF_DEFAULT_OPTS="
     --color 'fg:#bbccdd,fg+:#ddeeff,bg:#334455,preview-bg:#223344,border:#778899' --bind 'F2:toggle-preview'
 "
 
-export FZF_DEFAULT_COMMAND='fd'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+#export FZF_DEFAULT_COMMAND='fd'
+#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_COMPLETION_TRIGGER='\'
 export FZF_TMUX=1
