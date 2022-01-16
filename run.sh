@@ -37,7 +37,8 @@ sudo pip install update
 sudo pip3 install update
 sudo pip install pynvim python-language-server pyls-mypy pyls-black jedi==0.17.2
 sudo pip3 install pynvim python-language-server pyls-mypy pyls-black jedi==0.17.2
-curl -sL install-node.vercel.app/lts | bash
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
 echo "${GREEN} neovim zsh tmux ctags installation is completed${RESET}"
 
 
