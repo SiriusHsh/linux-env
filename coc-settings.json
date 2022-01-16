@@ -38,7 +38,7 @@
 		"variable": "\ue71b"
 	},
     "yank.list.maxsize": 50,
-    "python.pythonPath": "/home/sirius/miniconda3/bin/python",
+    "python.pythonPath": "/home/$USER/miniconda3/bin/python",
     "pyright.disableDiagnostics": true
 }
 
